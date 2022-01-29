@@ -50,3 +50,40 @@ export const Container = styled.form`
     }
   }
 `;
+
+export const TransactionTypeContainer = styled.div`
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+
+  button {
+    height: 4rem;
+    border: 1px solid var(--input-border);
+    border-radius: 0.25rem;
+
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border-color 200ms;
+
+    &:hover {
+      border-color: darken(var(--input-border), 10%);
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 1rem;
+      font-size: 1rem;
+      color: var(--text-title);
+    }
+  }
+`;
