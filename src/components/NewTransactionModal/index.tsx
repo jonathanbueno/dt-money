@@ -23,8 +23,6 @@ export function NewTransactionModal({
 
   function handleCreateNewTransaction(event: FormEvent) {
     event.preventDefault();
-
-    console.log(title, value, category, type);
   }
 
   return (
@@ -82,7 +80,6 @@ export function NewTransactionModal({
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         />
-        <input placeholder='data' />
         <button type='submit'>Cadastrar</button>
       </Container>
     </Modal>
