@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useTransactions } from '../../hooks/useTransactions';
 
 import incomeIcon from '../../assets/income.svg';
 import outcomeIcon from '../../assets/outcome.svg';
@@ -6,10 +6,8 @@ import totalIcon from '../../assets/total.svg';
 
 import { Container } from './styles';
 
-import { TransactionsContext } from '../../TransactionsContext';
-
 export function Summary() {
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions } = useTransactions();
 
   const summary = transactions.reduce(
     (acc, transaction) => {
