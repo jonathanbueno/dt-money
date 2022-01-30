@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: 4rem;
+  max-width: 100%;
+  overflow-x: auto;
 
   table {
     border-spacing: 0 0.5rem;

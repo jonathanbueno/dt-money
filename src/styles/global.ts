@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 93.75%; 
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 800px) {
       font-size: 87.5%;
     }
   }
@@ -77,6 +77,10 @@ export const GlobalStyle = createGlobalStyle`
 
     width: 100%;
     max-width: 576px;
+
+    @media (max-width: 800px) {
+      max-width: 90%;
+    }
   }
   .react-modal-close {
     position: absolute;
