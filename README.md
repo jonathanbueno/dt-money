@@ -13,3 +13,5 @@ This project is part of the Rocketseat's IGNITE course.
 - JavaScript numbers formatting;
 - Styled components;
 - Mocked API (Mirage.js)
+
+You can see some wrong commits trying to deploy this application, without success. This is something I am going to start learning next days :)
