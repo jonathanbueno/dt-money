@@ -62,7 +62,12 @@ export function Summary() {
           <p>Total</p>
           <img src={totalIcon} alt='Total' />
         </header>
-        <strong>{summary.total} </strong>
+        <strong>
+          {new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+          }).format(summary.total)}
+        </strong>
       </div>
     </Container>
   );
